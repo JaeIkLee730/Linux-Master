@@ -28,6 +28,7 @@
     * PE: PV에서 사용하는 블록
     * LE: LV에서 사용하는 블록. PE에 1:1 mapping
 
+---
 
 ## 2. 리눅스의 구조
 
@@ -140,6 +141,7 @@
                 * data blocks: 파일이 보관해야 하는 정보를 저장
                 * 간접 블록: 아이노드 수가 한정되어 있기 때문에 추가적인 데이터 블록을 위해 동적으로 할당될 수 있는 공간 필요
 
+---
 
 ## 3. X-윈도
 
@@ -172,6 +174,7 @@
 * X-윈도 응용 프로그램
 * GIMP, Totem, KMid, ImageMagick, eog, kdergraphics, Rhythmbox, evince, LibreOffice 
 
+---
 
 ## 4. Shell
 
@@ -287,6 +290,7 @@
         * 작은(최소) 부분(#, %) / 큰(최대) 부분(##, %%)  
         * 제거 후 나머지 return
 
+---
 
 ## 5. Process
 
