@@ -184,18 +184,22 @@
     * User가 로그인 -> shell 부여 -> 비로소 명령 수행 가능
     * Multics -> Bourne Shell -> C Shell, csh -> sh, bash(Bourne Again Shell - 표준), ksh, tcsh, zsh, 
 * Shell 종류 확인, 변경
-    * $ echo $SHELL  // 확인
-    * $ chsh -l  또는   $ cat /etc/shells     // 사용가능한 shell 확인
-    * $ chsh -s [shell_절대경로]      // shell 변경
+    ``` bash
+    $ echo $SHELL           // 확인
+    $ chsh -l  또는 
+    $ cat /etc/shells       // 사용가능한 shell 확인
+    $ chsh -s [shell_절대경로]      // shell 변경
+    ```
+
 * SHELL 환경 설정
     * shell 변수: 특정한 SHELL에만 적용, 지역변수같은 느낌, prompt 상에서 지정하셔 사용가능, 일반적으로 소문자
     * 환경변수: 모든 SHELL에 적용,  전역변수같은 느낌, 미리예약됨, 일반적으로 대문자, $ env 명령으로 현재 지정된 환경변수들을 확인할 수 있음
 * Bash shell의 주요 기능
     * 자동완성: tab키로 자동완성
     * History: ~/.bash_history에 실행했던 명령들 저장, history명령으로 이전 명령들 열람
-    * alias: 어떤 명령을 지정해 놓으면 사용자가 그 명령을 실행시 alias로 지정된 명령이 대신 실행
+    * Alias: 어떤 명령을 지정해 놓으면 사용자가 그 명령을 실행시 alias로 지정된 명령이 대신 실행
     * 명령행 편집기능: 명령행에서 커서 이동, 삭제를 빠르게 할 수 있는 단축키들: ESC/ctrl + b/f/a/e/d/k/u/y/....
-    * 명령 대체 (치환 기능) : `backquote`또는 $()를 사용하여 특정 명령의 결과를 다른 명령어의 인자값으로 사용할 수 있도록 해준다
+    * 명령 대체 (치환 기능) : \`backquote\` 또는 $()를 사용하여 특정 명령의 결과를 다른 명령어의 인자값으로 사용할 수 있도록 해준다
     * 그룹 명령: ";", "&&", "||"를 사용하여 하나의 명령행에 여거래그이 명령어를 동시에 넣을 수 있다. 
     * Standard I/O 제어 기능: 
         * stdin: 0 / stdout: 1 / stderr:2
@@ -231,7 +235,7 @@
     * \: escape. 특수문자나 alias의 기능을 없앤다. 명령행 입력이 길어질때 행 연장에도 사용
     * [ 문자1, 문자2, ...]: 안에 오는 문자들 중 하나  라는 의미
     * {문자열1, 문자열2, 문자열3}: 안에 오는 문자열 중 하나   라는 의미
-    * >,<: 입출력 컨트롤
+    * \>,<: 입출력 컨트롤
     * /: 경로명
     * !: 명령문 history
 
@@ -267,12 +271,25 @@
         * 특수 문자도 모두 문자 그래도 출력한다.  
         * -e option이 있으면 escape문자가 있는 부분은 특수문자로 번역한다.
     * 간단한 조건문
-        * test expression 또는
-        * [ expression ]     // 반드시 공백을 포함해야 한다. 
-        * 1 또는 0 반환 : True/False
+    ```
+    test expression 또는
+    [ expression ]      // 반드시 공백을 포함해야 한다. 
+                        // 1 또는 0 return : True/False
+    ```
+
     * 조건문
-        * if[ condition ] - then - elif[ condition ] - then - else - fi
-        * case - 문자열 - in - 정규식1) 명령1 - 정규식2) - 명령2 - …… - *) default 명령 - esac
+    ``` bash
+    if[ condition ]
+    then
+        action
+    elif[ condition ]
+        action
+    then
+        action
+    else
+    fi
+    
+    case 문자열 in 정규식1) 명령1 - 정규식2) - 명령2 - …… - *) default 명령 - esac
         * select - 변수 - in 값1, 값2, …. - do - body - done      // 자동으로 메뉴를 생성해주고 입력도 받는다
     * 반복
         * for - 변수 - in 값1, 값2,….. - do - body - done
@@ -346,3 +363,7 @@
     * 관련 유틸리티
         * 부팅 중 런레벨에 따라 자동으로 실행되는 서비스를 설정할 수 있는 유틸
         * ntsysv, chkconfig, system-config-services
+
+---
+
+[Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.

@@ -1,0 +1,201 @@
+* Ruby
+    *  script 언어
+    * 간결함과 생산성을 강조한 Dynamic open source programming language
+    * Perl, SmallTalk, Eiffel, LISP, Ada 등의 영향을 받아 만들어짐
+    * 명령형이면서 함수형인 프로그래밍 언어
+    * 모든 것이 객체이다, 완전 객체지향.
+        * 모든 것은 자신만의 속성(instance 변수)과 액션(method)을 갖는다.
+        * primitive type이 없다. 하나의 숫자조차 모두 객체이다.
+    * 유연성
+        * 개발자가 자유롭게 재정의할 수 있고 추가할 수 있다.
+    * 블록
+        * method에 클로저를 추가함으로써 메소드의 동작을 기술할 수 있다.
+    * 믹스인
+        * ruby는 단일상속만 제공 그대신 module을 제공
+        * module: method의 collection
+        * Class 안에 “include [Module_name]” 함으로써 유용한 메소드들은 손쉽게 얻을 수 있다.
+    * 변수
+        * var :  local variable
+        * @var: instance variable
+        * $var: global variable
+    * exception 처리 기능
+    * mark-sweep garbage collector
+    * C에서 Ruby를 사용하기 위한 간결한 API를 제공함
+    * OS-independent threading 제공. thread를 제공하지 않는 OS에서도 multi-threading 프로그램을 작성할 수 있다.
+* Ruby의 설치
+    * Mac에는 기본적으로 시스템 ruby가 내장되어 있어서 설치하지 않아도 ruby를 사용가능하다.
+    * 시스템 ruby 가급적 사용하지 않는 것을 권장한다. 
+        * Gem Dependencies
+            * 보통 bundler가 dependency 관련 문제들을 해결해주는데 시스템 ruby에서는 bundler 사용 불가능
+            * bundler없이 스스로 다 해야함
+        * Upgrading Ruby
+    * 버전관리자를 설치하여 버전별로 사용할 수 있도록 할것
+    ``` bash
+    $ brew update               // homebrew update
+    $ brew install rbenv        // ruby version 관리자 rbenv 설치
+    $ brew update ruby-build    // if there’s new ruby release
+    $ rbenv install -l           // 설치 가능한 ruby version 확인
+    $ rbenv install [ruby_version]   // 원하는 version의 ruby 설치
+    $ rbenv rehash              // 새로운 환경 재설정
+    $ rbenv global [ruby_version]   // 전역으로 설정  (local: 현재 디렉토리 / shell)
+    $ gem install [GEM_NAME]
+    $ rbenv rehash              // 새로운 환경 재설정
+    ```
+
+* RubyGems
+    * apt-get같은 개념
+    * ruby에 특화된 분산 패키지 시스템으로 라이브러리의 작성이나 공개, 설치를 도와주는 시스템
+    * ruby 1.9 부터는 ruby에 포함되어서 나온다. 이전 버전에서는 직접 설치해야한다.
+    * Concepts
+        * Ruby: 
+            * 보석의 한 종류, 루비
+            * Script 언어 중 하나
+        * Rails: 
+            * 철도
+        * Ruby on Rails: 
+            * 탄관에서 루비를 캐서 실어나르는 기차를 연상시킴, 
+            * Ruby로 쓰여진 웹 프레임워크
+        * Gem: 
+            * 보석이라는 의미.
+            * 라이브러리, 필요한 기능이 있을때 추가해서 사용하는
+            * Gem을 잘 사용하면 Ruby로 원하는 작업을 쉽게 할 수 있다. 
+    * Rake
+        * ruby 개발 환경에서 사용되는 빌드 프로그램
+        * Unix에서 사용되는 Make와 비슷한 용도
+        * Makefile과 비슷한 Rakefile이 있음
+        * task
+            * rake를 통해 실행되는 작업을 일컬음
+            * rake 서버의 실행여부와 상관없이 단독으로 실행된다.
+            * rails를 설치하면 Rake gem도 같이 설치된다  
+    * Bundler
+        * 하나의 RubyGems
+        * 다른 RubyGem들을 관리하는 RubyGem
+        * 각각의 RubyGem이 작동하기 위한 dependency들을 설치해줌
+        * Gemfile, Gemfile.lock
+            * 사이트에 필요한 RubyGem들을 Bundler에게 알려줌
+            * 사이트에 이 파일들이 없다면 'bundle exec' 생략하고 ‘$ jekyll serve'만 해도 된다.
+            * ‘$ bundle exec jekyll serve’ 하면 -> Bundler가 Gemfile.lock에 RubyGem을 사용하여 Jekyll 사이트를 생성 -> 호환성, dependency 충돌 발생하지 않음
+
+* Gem 구조
+    * 이름 / version / platform
+    * RubyGems는 자동으로 자신의 플랫폼에 맞는 버전을 다운로드한다.
+    * gem 내부 구성요소
+        * 테스트와 지원 유틸리티를 포함한 코드
+        * doc
+        * gem spec
+    * 표준 구조
+        * % tree freewill 
+        * freewill/ 
+        * ├── bin/                // 실행 파일. gem이 설치될떄 유저의 PATH에 로드
+        * │  └── freewill 
+        * ├── lib/                  // gem을 위한 코드를 포함
+        * │  └── freewill.rb 
+        * ├── test/               // 테스트 Framewoks에 따라 test 또는 spec
+        * │  └── test_freewill.rb   // test
+        * ├── README        // doc
+        * ├── Rakefile         
+        * └── freewill.gemspec  // gem의 내용, 테스트 정보 플랫폼, 버전 번호, 저자, ... 등 
+
+* Gem 사용
+    * 일반적으로 오픈소스로 배포되어 있음
+    * 찾기, 다운로드: 
+        * https://rubygems.org/ 에서 필요한 GEM 검색
+            * GEMFILE: [생성한 ruby on rails project에 어떻게 넣을지?]
+            * INSTALL: [install 방법, 명령어 나와있음]
+            * LINKS:
+                * Hompage
+                * Source code
+                * Documentation
+                * ….
+        * command line tool 사용
+            * $ gem search -r
+            * $ gem search [GEM_NAME]   // 정규 표현식 사용 가능
+            * $ gem search [GEM_NAME] -d     // 좀더 자세한 정보
+    * GEM 설치하기
+        * $ gem install [GEM_NAME]
+    * Code REQUIRE
+        * 필요한 GEM을 다운로드&설치 후
+        * 해당 라이브러리를 사용할 .rb 파일에 다음의 내용을 추가
+            * require '[GEM_NAME]'
+            * ex) require ‘jekyll'
+            * c언어에서 __.c 파일에 “#include [LIBRARY_NAME]”하는 것과 같음
+        * irb에서도 
+            * irb(main):001:0>> require '[GEM_NAME]’ 명령을 통해 code require가 가능하다
+    * 설치된 GEM 목록
+        * $ gem list    // 설치된 gem + 몇가지 기본적으로 포함되어 잇는 gem들의 목록
+    * GEM 제거
+        * $ gem uninstall [GEM_NAME]
+    * GEM 문서 보기
+        * $ ri [GEM_NAME]   // 설치된 gem의 문서를 볼 수 있다.
+        * $ gem server          // gem문서를 브라우저에서 localhost:8808에서 볼수 있다.
+    * GEM unpack
+        * gem을 설치하지 않고 내용을 보고 싶은 경우
+        * fetch 명령어를 사용해 .gem 파일을 다운로드해 unpack 명령어로 내용을 추출할 수 있다.
+        * $ gem fetch [GEM_NAME.gem]
+        * $ gem unpack [GEM_NAME.gem]
+        * $ more [GEM_NAME]/README
+    * GEM help
+        * $ gem -h
+        * $ gem --help
+        * $ gem help
+    * GEM version
+        * $ gem -v
+        * $ gem —version
+* 대화형 ruby shell - irb
+    * 보통 script 언어에는 interactive interpreter가 같이 제공되는 경우가 많음
+    * irb: ruby의 interactive interpreter, console을 통해 바로 루비코딩을 해볼 수 있는 인터페이스?
+    * ruby를 사용해서 개발할때 netbeans, radrails 등에서 제공하는 루비개발 툴들을(IDE) 사용할 수도 있지만 console과 IDE를 섞어서 사용하는 경우 많음. 루비는 코드가 상당히 함축적이라서 irb에서 직접 코딩을 하는 것이 실용적인 경우가 자주 있음. 10줄 이하의 코드만으로도 할 수 있는 일이 꽤 많아서.
+    * linux, OSX는 Terminal에서 "$ irb” 로 시작할 수 있다.
+    * 명령 단위로 바로 결과가 나온다.
+    * 여러줄에 걸쳐서 함수도 작성할 수 있다.
+    * 기본적으로는 입력한 내용을 그대로 echo해준다. 
+    * irb가 로드될때 라이브러리를 자동으로 require해주려면 '-r' 옵션을 준다 ( $ irb -r )
+* Script 언어란
+    * 응용프로그램 소프트웨어의 동작 내용을 대본(script)과 같이 기술하고 제어하기 위한 간이적인 프로그래밍 언어
+    * Source code를 컴파일하지 않고도 실행할 수 있는 프로그래밍 언어
+    * interpreting 과정을 거쳐야하기 때문에 다소 느릴 수 있다.
+* Script 언어의 사용 
+    * System에 사용
+        * 일괄 처리 작업에 사용
+        * Shell script (UNIX)
+        * Batch script (Windows)
+    * Web Applicaion에 사용
+        * 빠른 성능을 필요로하지 않는 web application에 사용
+        * server-side-script
+            * 해당 소스의 실행 결과를 확인하기 위해 웹서버를 거쳐야 하는 스크립트를 말한다.
+            * ASP, PHP, JSP, Python, Perl, Ruby
+        * client-side-script
+            * 내장된 interpreter에 의해 실행되는 script를 말한다.
+            * server를 거치지 않고 user쪽(웹서버에 접속한 PC)에서 처리되는 script를 말한다.
+            * JavaScript, VBScript, JScript
+* 몇가지 대표적인 Script 언어
+    * UNIX Shell Script
+        * 거의 모든 linux 배포판에서 실행이 가능
+        * System call을 위주로 사용하여 확장성이 좋다.
+        * 관리하는 저장소가 없어 필요할 때마다 만들어 사용
+    * Perl
+        * 문자열 가공에 강력함
+        * regular expression 관련 기능
+        * 정규표현식 많이 사용할 경우 가독성 매우 떨어짐
+        * 관리하는 저장소가 없어 필요할 때마다 만들어 사용
+    * Python
+        * 중괄호({,}) 등의 기호 대신에 들여쓰기를 사용하여 코드를 그룹핑한다.
+        * 관리되고 있는 저장소가 있다.
+        * 수학적 계산에 속도가 매우 빠름
+        * C/C++로 module을 작성할 수 있어서 확장성이 좋다.
+        * version 3.x으로 갈때 2.x와 호환성을 너무 버려서 문제 생김. 여전히 많은 유명한 패키지들은 2.x로 되어 있음
+    * Ruby
+        * Ruby on Rails라는 오픈 소스 웹 프레임워크가 급부상하면서 같이 주목을 받음 
+        * 문자열 처리에 특화
+        * 여러가지 화려한 기능 많음, 가독성 좋음
+        * package를 Gem이라는 파일로 묶어서 관리하며 dependency 처리가 가능하도록 되어있다.
+    * javascript
+        * client-side java script?
+* Script 언어 문법
+#!/bin/sh     
+shell이 해당 파일을 어떤 interpreter를 사용해서 실행할 것인지 지정해줌
+$ python a.py
+$ sh push.sh
+위와 같이 실행할 경우에는 interpreter를 지정할 필요 없음. 실행파일일 필요도 없음
+$ ./push.sh
+위와 같이 실행할 경우에는 파일 내에 interpreter를 지정해야하고 실행파일로 설정돼 있어야 함
