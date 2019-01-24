@@ -73,9 +73,14 @@
         * 각각의 RubyGem이 작동하기 위한 dependency들을 설치해줌
         * Gemfile, Gemfile.lock
             * 사이트에 필요한 RubyGem들을 Bundler에게 알려줌
-            * 사이트에 이 파일들이 없다면 'bundle exec' 생략하고 ‘$ jekyll serve'만 해도 된다.
-            * ‘$ bundle exec jekyll serve’ 하면 -> Bundler가 Gemfile.lock에 RubyGem을 사용하여 Jekyll 사이트를 생성 -> 호환성, dependency 충돌 발생하지 않음
-
+            * 사이트에 이 파일들이 없다면 ``bundle exec`` 생략하고 ``$ jekyll serve``만 해도 된다.
+            
+            ```bash
+            $ bundle exec jekyll serve
+            // -> Bundler가 Gemfile.lock에 RubyGem을 사용하여 Jekyll 사이트를 생성
+            // -> 호환성, dependency 충돌 발생하지 않음
+            ```
+            
 * Gem 구조
     * 이름 / version / platform
     * RubyGems는 자동으로 자신의 플랫폼에 맞는 버전을 다운로드한다.
@@ -84,35 +89,43 @@
         * doc
         * gem spec
     * 표준 구조
-        * % tree freewill 
-        * freewill/ 
-        * ├── bin/                // 실행 파일. gem이 설치될떄 유저의 PATH에 로드
-        * │  └── freewill 
-        * ├── lib/                  // gem을 위한 코드를 포함
-        * │  └── freewill.rb 
-        * ├── test/               // 테스트 Framewoks에 따라 test 또는 spec
-        * │  └── test_freewill.rb   // test
-        * ├── README        // doc
-        * ├── Rakefile         
-        * └── freewill.gemspec  // gem의 내용, 테스트 정보 플랫폼, 버전 번호, 저자, ... 등 
+    ```
+    % tree freewill 
+    freewill/ 
+    ├── bin/          // 실행 파일. gem이 설치될떄 유저의 PATH에 로드
+    │  └── freewill 
+    ├── lib/           // gem을 위한 코드를 포함
+    │  └── freewill.rb 
+    ├── test/           // 테스트 Framewoks에 따라 test 또는 spec
+    │  └── test_freewill.rb   // test
+    ├── README           // doc
+    ├── Rakefile         
+    └── freewill.gemspec  // gem의 내용, 테스트 정보 플랫폼, 버전 번호, 저자, ... 등 
+    ```
 
 * Gem 사용
     * 일반적으로 오픈소스로 배포되어 있음
     * 찾기, 다운로드: 
-        * https://rubygems.org/ 에서 필요한 GEM 검색
+        * [rubygems](https://rubygems.org/) 에서 필요한 GEM 검색
             * GEMFILE: [생성한 ruby on rails project에 어떻게 넣을지?]
-            * INSTALL: [install 방법, 명령어 나와있음]
+            * INSTALL: [install 방법, 명령어]
             * LINKS:
                 * Hompage
                 * Source code
                 * Documentation
-                * ….
+                * ….어
         * command line tool 사용
-            * $ gem search -r
-            * $ gem search [GEM_NAME]   // 정규 표현식 사용 가능
-            * $ gem search [GEM_NAME] -d     // 좀더 자세한 정보
+        ```bash
+        $ gem search -r
+        $ gem search [GEM_NAME]   // 정규 표현식 사용 가능
+        $ gem search [GEM_NAME] -d     // 좀더 자세한 정보
+        ```
+    
     * GEM 설치하기
-        * $ gem install [GEM_NAME]
+    ```bash
+    $ gem install [GEM_NAME]
+    ```
+    
     * Code REQUIRE
         * 필요한 GEM을 다운로드&설치 후
         * 해당 라이브러리를 사용할 .rb 파일에 다음의 내용을 추가
@@ -122,25 +135,37 @@
         * irb에서도 
             * irb(main):001:0>> require '[GEM_NAME]’ 명령을 통해 code require가 가능하다
     * 설치된 GEM 목록
-        * $ gem list    // 설치된 gem + 몇가지 기본적으로 포함되어 잇는 gem들의 목록
+        ```bash
+        $ gem list    // 설치된 gem + 몇가지 기본적으로 포함되어 잇는 gem들의 목록
+        ```
     * GEM 제거
-        * $ gem uninstall [GEM_NAME]
+        ```bash
+        $ gem uninstall [GEM_NAME]
+        ```
     * GEM 문서 보기
-        * $ ri [GEM_NAME]   // 설치된 gem의 문서를 볼 수 있다.
-        * $ gem server          // gem문서를 브라우저에서 localhost:8808에서 볼수 있다.
+        ```bash
+        $ ri [GEM_NAME]   // 설치된 gem의 문서를 볼 수 있다.
+        $ gem server          // gem문서를 브라우저에서 localhost:8808에서 볼수 있다.
+        ```
     * GEM unpack
         * gem을 설치하지 않고 내용을 보고 싶은 경우
         * fetch 명령어를 사용해 .gem 파일을 다운로드해 unpack 명령어로 내용을 추출할 수 있다.
-        * $ gem fetch [GEM_NAME.gem]
-        * $ gem unpack [GEM_NAME.gem]
-        * $ more [GEM_NAME]/README
+        ```bash
+        $ gem fetch [GEM_NAME.gem]
+        $ gem unpack [GEM_NAME.gem]
+        $ more [GEM_NAME]/README
+        ```
     * GEM help
+        ```bash
         * $ gem -h
         * $ gem --help
         * $ gem help
+        ```
     * GEM version
+        ```bash
         * $ gem -v
         * $ gem —version
+        ```
 * 대화형 ruby shell - irb
     * 보통 script 언어에는 interactive interpreter가 같이 제공되는 경우가 많음
     * irb: ruby의 interactive interpreter, console을 통해 바로 루비코딩을 해볼 수 있는 인터페이스?
@@ -192,10 +217,13 @@
     * javascript
         * client-side java script?
 * Script 언어 문법
-#!/bin/sh     
-shell이 해당 파일을 어떤 interpreter를 사용해서 실행할 것인지 지정해줌
-$ python a.py
-$ sh push.sh
-위와 같이 실행할 경우에는 interpreter를 지정할 필요 없음. 실행파일일 필요도 없음
-$ ./push.sh
-위와 같이 실행할 경우에는 파일 내에 interpreter를 지정해야하고 실행파일로 설정돼 있어야 함
+   ```
+   #!/bin/sh     
+   // shell이 해당 파일을 어떤 interpreter를 사용해서 실행할 것인지 지정해줌 
+   
+   $ python a.py
+   $ sh push.sh
+   // 위와 같이 실행할 경우에는 interpreter를 지정할 필요 없음. 실행파일일 필요도 없음
+   
+   $ ./push.sh
+   // 위와 같이 실행할 경우에는 파일 내에 interpreter를 지정해야하고 실행파일로 설정돼 있어야 함
