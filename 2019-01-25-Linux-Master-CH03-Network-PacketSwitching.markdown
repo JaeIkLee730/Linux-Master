@@ -31,5 +31,5 @@
 - 전송단위는 고정 길이를 갖는 패킷인 Cell이다
 - 고정 길이의 패킷을 사용함으로 가변적인 Frame을 사용할 때보다 오버헤드를 줄일 수 있있어 전송률이 빨라진다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMzE2ODE3MV19
+eyJoaXN0b3J5IjpbLTEyNjgxNzQ1OTQsMTIyMzE2ODE3MV19
 -->
