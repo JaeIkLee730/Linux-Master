@@ -26,9 +26,8 @@
 
 ### Cell Relay
 - ATM(Asynchronous Transfer Mode)라고도 한다.
-- Asynchronous Time Multiplexing
-- 고속 패킷 교환
 - Frame Realy에서 발전된 형태이다.
+- Asynchronous Time Multiplexing, 고속 패킷 교환 지원
 - 전송단위는 고정 길이를 갖는 패킷인 Cell이다
 - 고정 길이의 패킷을 사용함으로 가변적인 Frame을 사용할 때보다 오버헤드를 줄일 수 있있어 전송률이 빨라진다.
 <!--stackedit_data:
