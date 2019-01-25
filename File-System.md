@@ -109,4 +109,4 @@ What is File System?
     * 드라이브 문자를 지젖앟ㄹ 수 있는 모든 장치와 기타 저장 공간들도 문자를 할당받는 순간 드라이브가 되는 것
 * **EC2-EBS**
     * EBS : Elastic Block Storage
-    * 일종의 하드 디스크Welcome to StackEdit!
+    * 일종의 하드 디스크
