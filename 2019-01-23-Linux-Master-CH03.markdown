@@ -165,7 +165,7 @@
 	- Decapsulation: 하위 layer에서는 상위 layer에서 온 정보를 data 취급
 - **Protocol 제정 기관**
 	- ISO(International Organization for Standardization): 국제적인 표준화 기구
-	- IEEE(Institute of Electrical and Electronics Engineers): 전기전자공학 관련 주요 표준 및 연구 정책 발전
+	- IEEE(Institute of Electrical and Electronics Engineers): 전기전자공학 주요 표준 및 연구정책 발전
 	- ANSI(American National Standards Institute): 미국의 산업 표준을 제정
 	- EIA:(Electronic Industries Alliance): 미 전자 산업 협회
 	- ITU-T(International Telecommunication Union-T): ITU의 산하기구 중 전기통신 표준화 부문을 담당
@@ -173,10 +173,14 @@
 	- 컴퓨터 기종에 관계없이 정보 교환이 가능하도록 해준다.
 	- TCP는 packet의 흐름을 제어하고 IP는 packet을 목적지까지 전달한다.
 - **TCP/IP의 구조**
-	- L4(Application): 프로세스간의 통신. L3의 프로토콜을 사용하여 호스
+	- L4(Application): 프로세스간의 통신. L3의 프로토콜을 사용하여 호스트간의 연결의 확립한다. 
 	- L3(Transport): data를 segment 형태로 수신자에게 전달. 연결, 신뢰성, 흐름에저, 다중화 서비스 제공
 	- L2(Internet): L3에서 받은 data를 packet 형태로 목적지까지 효율적으로 전달
 	- L1(Network Interface): 물리적인 네트워크로 프레임을 전달
+- **TCP & UDP**
+	- TCP
+		- 
+	- 
 
 ---
 
@@ -195,6 +199,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNTAxODI5NCwxNTU0NDg2MjUsNzQ2MD
-cyOTM1LC0xNTc0MDcyOTYxXX0=
+eyJoaXN0b3J5IjpbOTUzNTYxNTc5LDE1NTQ0ODYyNSw3NDYwNz
+I5MzUsLTE1NzQwNzI5NjFdfQ==
 -->
