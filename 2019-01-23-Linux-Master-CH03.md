@@ -45,7 +45,7 @@
         - 신호를 전송하는 물리적인 매체로 BNC, UTP, 광섬유 등이 있다.
         - BNC(동축 케이블)
             - noise에 강함 
-            - 데역폭이 넓어 여러채널을 동시 수용가능
+            - 대역폭이 넓어 여러채널을 동시 수용가능
             - 굵음, 빠름, 비쌈
             - 연결되는 컴퓨터는 하나의 선으로 계속 연결 가능
             - 터미네이터 설치 필요 / 허브 불필요
@@ -233,8 +233,10 @@
 	- [16bit 16진수]:[16bit 16진수]: ....... [16bit 16진수]X8개로 표현
 	- 특징
 		- IP 주소 32bit -> 128bit 확장
-		- packet 크기 64kb -> (임의의 큰 크기) 확장
-		- IPv6 네트워크에 접속ㅎ
+		- Packet 크기 64kb -> (임의의 큰 크기) 확장
+		- IPv6 호스트가 IPv6 네트워크에 접속하면 네트워크 주소 자동으로 할당
+		- 헤더 구조 단순화
+		- flow label
 		-  
 ---
 
@@ -253,6 +255,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNDM1NTY3OSwxNzU4ODQ2MjE1LDE1NT
+eyJoaXN0b3J5IjpbMTU4MTA4ODA2OCwxNzU4ODQ2MjE1LDE1NT
 Q0ODYyNV19
 -->
