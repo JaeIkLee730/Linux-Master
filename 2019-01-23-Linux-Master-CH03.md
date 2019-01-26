@@ -165,7 +165,8 @@
 	- Decapsulation: 하위 layer에서는 상위 layer에서 온 정보를 data 취급
 - Protocol 제정 기관
 	- ISO(International Organization for Standardization): 국제적인 표준화 기구
-	- IEEE(Institute of Electrical and Electronics Engineers)
+	- IEEE(Institute of Electrical and Electronics Engineers): 전기전자공학 관련 주요 표준 및 연구 정책 발전
+	- ANSI(American National Standards Institute): 미국의 산업 표준 제정
 
 ---
 
@@ -184,5 +185,5 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMDIzNjEyMiwxNTU0NDg2MjVdfQ==
+eyJoaXN0b3J5IjpbMTAxMDg4Njk0MCwxNTU0NDg2MjVdfQ==
 -->
