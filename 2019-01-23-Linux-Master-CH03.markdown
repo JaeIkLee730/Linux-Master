@@ -188,7 +188,10 @@
 	- 서로 다른 프로토콜의 system에서 전송되는 데이터를 처리하기 위해 datagram header에 첨부
 	- 리눅스 시스템에서의 protocol#들은 ``/etc/protocols``에서 확인 가능
 - **Port number**
-	- L3에서는 서비스 다중화를 위해 각각의 App들이 할당된 포트를 이용해 통신할 데이터를 주고 받는다. 
+	- L3에서는 서비스 다중화를 위해 각각의 App들이 할당된 포트를 이용해 데이터를 주고 받는다.
+	- 리눅스 시스템에서는 ``/etc/services``파일에서 주요 포트 번호를 확인 가능 
+- **Scoket**
+- 
 	- 
 	- 
 
@@ -209,6 +212,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NzU4MDA2NSwxNTU0NDg2MjUsNzQ2MD
+eyJoaXN0b3J5IjpbMTY4MjgzMDYyMSwxNTU0NDg2MjUsNzQ2MD
 cyOTM1LC0xNTc0MDcyOTYxXX0=
 -->
