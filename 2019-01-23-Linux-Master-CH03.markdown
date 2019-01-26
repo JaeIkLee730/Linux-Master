@@ -197,6 +197,7 @@
 - **IP주소**
 	- 인터넷에서 다른 컴퓨터와 서로 인식하고 통신하기 위해 컴퓨터마다 고유하게 제공되는 숫자
 	- IPv4는 4부분의 8bit로 이뤄져 있다
+	- [네트워크 ID 부분][host ID 부분] 으로 구성
 	- 첫번째 8bit영역의 처음 4비트에 따라 class가 결정된다.
 	- A: 0xxxxxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx
 	- B: 10xxxxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx.
@@ -222,6 +223,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2Nzk1NTU1LDE1NTQ0ODYyNSw3NDYwNz
-I5MzUsLTE1NzQwNzI5NjFdfQ==
+eyJoaXN0b3J5IjpbMTU2NzkxNjUyMywxNTU0NDg2MjUsNzQ2MD
+cyOTM1LC0xNTc0MDcyOTYxXX0=
 -->
