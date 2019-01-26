@@ -179,7 +179,10 @@
 	- L1(Network Interface): 물리적인 네트워크로 프레임을 전달
 - **TCP & UDP**
 	- TCP
-		- 
+		- src-dst를 1:1로 연결하여 직접 제어하기 때문에 속도가 느리다
+		- 전송과 오류 수정에 있어 안전성과 신뢰성이 높다. 
+	- UDP
+	- 
 	- 
 
 ---
@@ -199,5 +202,5 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUzNTYxNTc5LDE1NTQ0ODYyNV19
+eyJoaXN0b3J5IjpbLTE5ODU5MTQzMjgsMTU1NDQ4NjI1XX0=
 -->
