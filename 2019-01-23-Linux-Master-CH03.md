@@ -226,7 +226,10 @@
 		- 3: 희망 문자열
 - **ICANN**
 	- Internet Corporation for Assigned Names and Numbers
-	- 도메인 네임, IP, 프로토콜의 범주와 포트 번호 할당, 
+	- 도메인 네임, IP, 프로토콜의 범주와 포트 번호 할당, DNS 관련 이슈를 담당하는 비영리 기관
+- **IPv6**
+	- IPv4의 주소 고갈 문제를 해결하기 위해 등장
+	- 128비트  
 
 ---
 
@@ -245,6 +248,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNzk1NjMxMCwxNzU4ODQ2MjE1LDE1NT
+eyJoaXN0b3J5IjpbMTA5MTg3Mjk3MywxNzU4ODQ2MjE1LDE1NT
 Q0ODYyNV19
 -->
