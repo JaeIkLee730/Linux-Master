@@ -173,7 +173,10 @@
 	- 컴퓨터 기종에 관계없이 정보 교환이 가능하도록 해준다.
 	- TCP는 packet의 흐름을 제어하고 IP는 packet을 목적지까지 전달한다.
 - **TCP/IP의 구조**
-	- 
+	- L4(Application): 
+	- L3(Transport)
+	- L2(Internet)
+	- L1(Network Interface): 물리적인 네트워크로 프레임을 전달
 
 ---
 
@@ -192,5 +195,5 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjM0Nzg3NDksMTU1NDQ4NjI1XX0=
+eyJoaXN0b3J5IjpbLTEzMzQyMDQ1NTYsMTU1NDQ4NjI1XX0=
 -->
