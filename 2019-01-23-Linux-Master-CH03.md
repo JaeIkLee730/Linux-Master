@@ -201,11 +201,11 @@
 	- 첫번째 8bit영역의 처음 4비트에 따라 class가 결정된다.
 - **IP의 클래스**
 	- A: 0XXXXXXX.xxxxxxxx.xxxxxxxx.xxxxxxxx  		Net ID: 0~127
-	- B: 10XXXXXX.XXXXXXXX.xxxxxxxx.xxxxxxxx 		Net ID: 
-	- C: 110XXXXX.XXXXXXXX.XXXXXXXX.xxxxxxxx	Net ID: 
-	- D: 1110XXXX.XXXXXXXX.XXXXXXXX.XXXXXXXX	Net ID:
-	- E: 1111XXXX.XXXXXXXX.XXXXXXXX.XXXXXXXX 
-	- 
+	- B: 10XXXXXX.XXXXXXXX.xxxxxxxx.xxxxxxxx 		Net ID: 128.0~191.255
+	- C: 110XXXXX.XXXXXXXX.XXXXXXXX.xxxxxxxx	Net ID: 192.0.0~223.255.255
+	- D: 1110XXXX.XXXXXXXX.XXXXXXXX.XXXXXXXX	Net ID: 224.0.0.0~239.255.255.255
+	- E: 1111XXXX.XXXXXXXX.XXXXXXXX.XXXXXXXX 	Net ID: 240.0.0.0~255.255.255.255
+- **특
 
 ---
 
@@ -224,5 +224,5 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NjM3NzE0MSwxNTU0NDg2MjVdfQ==
+eyJoaXN0b3J5IjpbMTI4MTkzMTA5LDE1NTQ0ODYyNV19
 -->
