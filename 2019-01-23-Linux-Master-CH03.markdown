@@ -166,7 +166,9 @@
 - Protocol 제정 기관
 	- ISO(International Organization for Standardization): 국제적인 표준화 기구
 	- IEEE(Institute of Electrical and Electronics Engineers): 전기전자공학 관련 주요 표준 및 연구 정책 발전
-	- ANSI(American National Standards Institute): 미국의 산업 표준 제정. 
+	- ANSI(American National Standards Institute): 미국의 산업 표준을 제정
+	- EIA:(Electronic Industries Alliance): 미 전자 산업 협회
+	- ITU-T(International Telecommunication Union )
 
 ---
 
@@ -185,6 +187,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNjU2MDU5OCwxNTU0NDg2MjUsNzQ2MD
-cyOTM1LC0xNTc0MDcyOTYxXX0=
+eyJoaXN0b3J5IjpbLTEzOTAxNzU4ODgsMTU1NDQ4NjI1LDc0Nj
+A3MjkzNSwtMTU3NDA3Mjk2MV19
 -->
