@@ -145,13 +145,13 @@
 	- 고정 길이의 패킷을 사용함으로 가변적인 Frame을 사용할 때보다 오버헤드를 줄일 수 있있어 전송률이 빨라진다.
 
 ### **1.4. TCP/IP 및 네트워크 프로토콜의 이해**
-- Protocol의 개요
+- **Protocol의 개요**
 	- 컴퓨터들이 서로 통신을 하기 위해 미리 정해놓은 통신 규칙.
 	- 기본 구성 요소
 		- Syntax: 전송할 data의 구조, 형태에 대한 내용
 		- Semantic: 오류제어 및 data를 형태에 따라 어덯게 해석할지에 대한 내용
 		- Timing: data를 언제 어떤 속도로 보낼 것인지에 대한 내용
-- Protocol의 기능
+- **Protocol의 기능**
 	- Addressing: 주소지정 방식
 	- Sequencing: data 전송순서 명시. flow control, error control에 사용
 	- Fragmentation&Reassembly: 블록을 분할 전송 -> 재조합하여 수신
@@ -163,13 +163,14 @@
 	- Transmission: 우선순위 결정, 서비스 등급, 보안 요구 등의 제어 서비스
 	- Encapsulation: Data가 하위 layer로 갈때 현재 layer의 정보를 헤더에 덧붙임
 	- Decapsulation: 하위 layer에서는 상위 layer에서 온 정보를 data 취급
-- Protocol 제정 기관
+- **Protocol 제정 기관**
 	- ISO(International Organization for Standardization): 국제적인 표준화 기구
 	- IEEE(Institute of Electrical and Electronics Engineers): 전기전자공학 관련 주요 표준 및 연구 정책 발전
 	- ANSI(American National Standards Institute): 미국의 산업 표준을 제정
 	- EIA:(Electronic Industries Alliance): 미 전자 산업 협회
 	- ITU-T(International Telecommunication Union-T): ITU의 산하기구 중 전기통신 표준화 부문을 담당
-- TCP/
+- **TCP/IP의 개요**
+	- 컴퓨터 기종에 관계없이 정보 교환이 가능하돌
 
 ---
 
@@ -188,5 +189,5 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MTg4OTQ2MSwxNTU0NDg2MjVdfQ==
+eyJoaXN0b3J5IjpbMTg2NDgwMTU0NCwxNTU0NDg2MjVdfQ==
 -->
