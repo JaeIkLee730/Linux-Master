@@ -181,7 +181,11 @@
 	- TCP
 		- src-dst를 1:1로 연결하여 직접 제어하기 때문에 속도가 느리다
 		- 전송과 오류 수정에 있어 안전성과 신뢰성이 높다. 
-	- 야
+	- UDP
+		- 연결 과정, 전송 성공 여부 체크, 오류 수정 없음
+		- 빠르지만 안정성은 떨어짐
+- Protocol number
+	- 
 	- 
 
 ---
@@ -201,6 +205,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODUwMzQ5OTgsMTU1NDQ4NjI1LDc0Nj
+eyJoaXN0b3J5IjpbLTE2ODcwMTk5OTcsMTU1NDQ4NjI1LDc0Nj
 A3MjkzNSwtMTU3NDA3Mjk2MV19
 -->
