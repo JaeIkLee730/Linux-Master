@@ -221,8 +221,9 @@
 	- 컴퓨터가 많아지면서 중앙 관리가 어려워져 DNS가 등장했다.
 	- 체계
 		- Root
-			- gTLD / ccTLD 
-				- SLD
+		- gTLD(generic Top Level Domain) / ccTLD(Country code Top Level Domain)
+		- SLD(Second Level Domain): 기관명 또는 기관 종류
+		- 기
 
 ---
 
@@ -241,6 +242,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyODg5ODE4NCwxNzU4ODQ2MjE1LDE1NT
+eyJoaXN0b3J5IjpbLTYwNTY2NDI4NiwxNzU4ODQ2MjE1LDE1NT
 Q0ODYyNSw3NDYwNzI5MzUsLTE1NzQwNzI5NjFdfQ==
 -->
