@@ -106,7 +106,12 @@
 	- 도시 하나 정도의 규모로 도시 내의 여러 LAN을 묶어 놓은 형태
 	- LAN보다 장거리이며 고속이고 음성과 데이터 모두 전송이 가능하다 
 - **WAN (Wide Area Network)**
-	- 굮
+	- 국가, 대륙 등과 같은 넓은 지역을 연결하는 네트워크 
+	- 거리제약 없음
+	- LAN보다 느림, 전송 에러율 높음,
+	- 구성방식
+		- 전용회선: 
+		- 교환회선
 	- 
 
 ### **1.4. TCP/IP 및 네트워크 프로토콜의 이해**
@@ -128,6 +133,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMTMzNjAzNyw3NDYwNzI5MzUsLTE1Nz
-QwNzI5NjFdfQ==
+eyJoaXN0b3J5IjpbLTE4NTk1MTcwNzUsNzQ2MDcyOTM1LC0xNT
+c0MDcyOTYxXX0=
 -->
