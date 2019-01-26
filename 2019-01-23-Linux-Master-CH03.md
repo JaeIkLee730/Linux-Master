@@ -164,8 +164,8 @@
 	- Encapsulation: Data가 하위 layer로 갈때 현재 layer의 정보를 헤더에 덧붙임
 	- Decapsulation: 하위 layer에서는 상위 layer에서 온 정보를 data 취급
 - Protocol 제정 기관
-	- ISO
-	- 
+	- ISO(International Organization for Standardization): 국제적인 표준화 기구
+	- IEEE(Institute of Electrical and Electronics Engineers)
 
 ---
 
@@ -184,5 +184,5 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ4MjExMTI1LDE1NTQ0ODYyNV19
+eyJoaXN0b3J5IjpbLTIyMDIzNjEyMiwxNTU0NDg2MjVdfQ==
 -->
