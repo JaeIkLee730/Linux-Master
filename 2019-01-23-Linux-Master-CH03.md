@@ -151,12 +151,13 @@
 		- Syntax: 전송할 data의 구조, 형태에 대한 내용
 		- Semantic: 오류제어 및 data를 형태에 따라 어덯게 해석할지에 대한 내용
 		- Timing: data를 언제 어떤 속도로 보낼 것인지에 대한 내용
-- Protocol기능
+- Protocol의 기능
 	- Addressing: 주소지정 방식
 	- Sequencing: data 전송순서 명시. flow control, error control에 사용
 	- Fragmentation&Reassembly: 블록을 분할 전송 -> 재조합하여 수신
 	- Flow Control: "(보내는 양) <= (처리가능한 양)"이 되도록 control
-	- Error Control:   
+	- Error Control: data 교환시 발생하는 오류 검출
+	- Connection Control: 연결 설정에 있어 syntax, semantic, 
 
 
 ---
@@ -176,5 +177,5 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk4NjQxMjM4LDE1NTQ0ODYyNV19
+eyJoaXN0b3J5IjpbNTg4ODkzODI5LDE1NTQ0ODYyNV19
 -->
