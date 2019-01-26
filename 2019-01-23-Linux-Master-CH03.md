@@ -174,7 +174,7 @@
 	- TCP는 packet의 흐름을 제어하고 IP는 packet을 목적지까지 전달한다.
 - **TCP/IP의 구조**
 	- L4(Application): 
-	- L3(Transport): data를 segment 형태로 수신자에게 전달. 연결, 신뢰성, 흐름에저, 다중화 
+	- L3(Transport): data를 segment 형태로 수신자에게 전달. 연결, 신뢰성, 흐름에저, 다중화 서비스 제공
 	- L2(Internet): L3에서 받은 data를 packet 형태로 목적지까지 효율적으로 전달
 	- L1(Network Interface): 물리적인 네트워크로 프레임을 전달
 
@@ -195,5 +195,5 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMTE4OTIyNiwxNTU0NDg2MjVdfQ==
+eyJoaXN0b3J5IjpbMTk0MjU3NzU0OSwxNTU0NDg2MjVdfQ==
 -->
