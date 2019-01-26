@@ -85,10 +85,11 @@
 	- LAN (Local Area Network): 근거리. 집, 사무실, PC방 정도
 		- 주로 Ethernet, WLAN 방식 사용.
 		- 구성방식(topology)
-			- Star형: 중앙 컴퓨터가 각 컴퓨터와 연결되어 통신하는 방식
-			- Bus형: 하나의 통신회선(bus)에 여러 컴퓨터를 연결하며 한번에 한 컴 
+			- Star형: 중앙 컴퓨터가 각 컴퓨터와 연결되어 통신한다. 중앙 컴퓨터 고장시 전체 중단
+			- Bus형: 하나의 통신회선(bus)에 여러 컴퓨터를 연결하며 한번에 한 컴퓨터만 전송 가능 
 			- Ring형: 원형의 통신회선에 컴퓨터와 단말기를 연결. 토큰 패싱 사용. 전송 충돌 없음
 			- Mesh형: Star + Ring 형태. 라우터 이용하여 LAN들을 연결하거나 백본망 구성시 사용
+		- 전송방식
 	- MAN (Metropolitan Area Network): 도시 하나 정도
 	- WAN (Wide Area Network): 원거리
 
@@ -111,6 +112,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQzODA5NDQsNzQ2MDcyOTM1LC0xNT
-c0MDcyOTYxXX0=
+eyJoaXN0b3J5IjpbNjYyOTE2NDU0LDc0NjA3MjkzNSwtMTU3ND
+A3Mjk2MV19
 -->
