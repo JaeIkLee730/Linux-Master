@@ -111,7 +111,7 @@
 	- LAN보다 느림, 전송 에러율 높음,
 	- 구성방식
 		- 전용회선: 계약한 송수신 사용자끼리만 전용 통신 선로로 연결하기 떄문에 안전하지만 비쌈
-		- 교환회선: PSTN, PSDN과 같은 공중망을 이용해 전송하는 방식
+		- 교환회선: PSTN, PSDN과 같은 공중망을 이용해 전송하는 방식. 싸지만 느림. Circuit Switching, Packet Switching, ATM, 등이 있다.
 	- 
 
 ### **1.4. TCP/IP 및 네트워크 프로토콜의 이해**
@@ -133,6 +133,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNTk4MzcwNCw3NDYwNzI5MzUsLTE1Nz
+eyJoaXN0b3J5IjpbMTg0NDM5MjE3OCw3NDYwNzI5MzUsLTE1Nz
 QwNzI5NjFdfQ==
 -->
