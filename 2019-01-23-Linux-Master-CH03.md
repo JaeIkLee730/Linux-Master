@@ -220,10 +220,13 @@
 	- 원래는 'hosts' 라는 정적 파일을 중앙에서 관리하고 공유하고 업데이트 했다.
 	- 컴퓨터가 많아지면서 중앙 관리가 어려워져 DNS가 등장했다.
 	- 체계
-		- Root
-		- gTLD(generic Top Level Domain) / ccTLD(Country code Top Level Domain)
-		- SLD(Second Level Domain): 기관명 또는 기관 종류
-		- 
+		- 0: Root
+		- 1: gTLD(generic Top Level Domain) / ccTLD(Country code Top Level Domain)
+		- 2: SLD(Second Level Domain): 기관명 또는 기관 종류
+		- 3: 희망 문자열
+- **ICANN**
+	- Internet Corporation for Assigned Names and Numbers
+	- 도메인 네임, IP, 프로토콜의 범주와 포트 번호 할당, 
 
 ---
 
@@ -242,6 +245,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MDQ5NzQ1OCwxNzU4ODQ2MjE1LDE1NT
+eyJoaXN0b3J5IjpbLTkxNzk1NjMxMCwxNzU4ODQ2MjE1LDE1NT
 Q0ODYyNV19
 -->
