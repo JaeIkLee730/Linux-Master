@@ -236,8 +236,9 @@
 		- Packet 크기 64kb -> (임의의 큰 크기) 확장
 		- IPv6 호스트가 IPv6 네트워크에 접속하면 네트워크 주소 자동으로 할당
 		- 헤더 구조 단순화
-		- flow label
-		-  
+		- flow label을 도입하여 흐름제어 기능을 지원
+		-  IPv6 확장 헤더를 통해 패킷 출처 인증, 데이터 무결성 및 비밀 보장 기능 적용 가능
+		- IPv6 호스트는 네트워크의 물리적 위치 제한없이 같은 주소를 유리하면서 
 ---
 
 
@@ -255,6 +256,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MTA4ODA2OCwxNzU4ODQ2MjE1LDE1NT
+eyJoaXN0b3J5IjpbMTU4MjM0MTI4NSwxNzU4ODQ2MjE1LDE1NT
 Q0ODYyNV19
 -->
