@@ -195,7 +195,8 @@
 	- 네트워크 관련 프로그램들은 상호간 데이터 교환을 위해 socket을 생성하고 socket으로 통신
 	- protocol, src IP, src Port, dst IP, dst Port 정보를 담는다.
 - **IP주소**
-	- 인터넷에서 다른 컴퓨터와 서로 인식하고 통신하기 
+	- 인터넷에서 다른 컴퓨터와 서로 인식하고 통신하기 위해 컴퓨터마다 고유하게 제공되는 숫자
+	- 4부분의 8bit로 이뤄져 있다 
 	- 
 
 ---
@@ -215,6 +216,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNDU0Njg0MCwxNTU0NDg2MjUsNzQ2MD
+eyJoaXN0b3J5IjpbLTc5ODEwNjU0MiwxNTU0NDg2MjUsNzQ2MD
 cyOTM1LC0xNTc0MDcyOTYxXX0=
 -->
