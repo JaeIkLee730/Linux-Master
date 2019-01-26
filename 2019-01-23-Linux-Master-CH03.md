@@ -162,6 +162,10 @@
 	- Multiplexing: 하나의 통신 선로에서 다중 시스템이 동시에 통신
 	- Transmission: 우선순위 결정, 서비스 등급, 보안 요구 등의 제어 서비스
 	- Encapsulation: Data가 하위 layer로 갈때 현재 layer의 정보를 헤더에 덧붙임
+	- Decapsulation: 하위 layer에서는 상위 layer에서 온 정보를 data 취급
+- Protocol 제정 기관
+	- ISO
+	- 
 
 ---
 
@@ -180,5 +184,5 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MzE1MzA3MiwxNTU0NDg2MjVdfQ==
+eyJoaXN0b3J5IjpbNDQ4MjExMTI1LDE1NTQ0ODYyNV19
 -->
