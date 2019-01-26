@@ -90,6 +90,9 @@
 			- Ring형: 원형의 통신회선에 컴퓨터와 단말기를 연결. 토큰 패싱 사용. 전송 충돌 없음
 			- Mesh형: Star + Ring 형태. 라우터 이용하여 LAN들을 연결하거나 백본망 구성시 사용
 		- 전송방식
+			- Ethernet, CSMA/CD
+				- MAC 주소를 기반으로 상호간 data 교환
+				- ㅁ
 	- MAN (Metropolitan Area Network): 도시 하나 정도
 	- WAN (Wide Area Network): 원거리
 
@@ -112,6 +115,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYyOTE2NDU0LDc0NjA3MjkzNSwtMTU3ND
-A3Mjk2MV19
+eyJoaXN0b3J5IjpbLTE4NTM4NTg5ODEsNzQ2MDcyOTM1LC0xNT
+c0MDcyOTYxXX0=
 -->
