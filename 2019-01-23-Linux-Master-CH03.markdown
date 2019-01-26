@@ -121,10 +121,9 @@
 		- Datagram 방식: 연결 설정 과정이 없기 때문에 패킷들이 각기 다른 경로로 독립적으로 전송. 순서고 제각각
 		- Virtual Circuit 방식: 송수신자간 가상의 파이프를 통해 모든 패킷이 동일한 경로로 전송. 순서도 그대로
 	- # X.25 / Frame Relay / Cell Realay
-- **컴퓨터 통신망 발전**
-> 전화망 -> Telnet, Tymnet: 고품질의 데이터 서비스 제공 하기 위해 설치된 패킷 교환망 -> 장비들간 호환성 문제 -> 전화회사들을 중심으로 표준 프로토콜 제정 -> X.25
 
-<br>
+####**컴퓨터 통신망 발전**
+> 전화망 -> Telnet, Tymnet: 고품질의 데이터 서비스 제공 하기 위해 설치된 패킷 교환망 -> 장비들간 호환성 문제 -> 전화회사들을 중심으로 표준 프로토콜 제정 -> X.25
 
 ### X.25
 - 데이터 -> 패킷단위로 분할 -> 전송 -> 패킷 composition -> 수신자
@@ -171,6 +170,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NzcwNTk2OSw3NDYwNzI5MzUsLTE1Nz
+eyJoaXN0b3J5IjpbMTIzNDc4MTYwOCw3NDYwNzI5MzUsLTE1Nz
 QwNzI5NjFdfQ==
 -->
