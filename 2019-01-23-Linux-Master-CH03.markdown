@@ -170,7 +170,7 @@
 	- EIA:(Electronic Industries Alliance): 미 전자 산업 협회
 	- ITU-T(International Telecommunication Union-T): ITU의 산하기구 중 전기통신 표준화 부문을 담당
 - **TCP/IP의 개요**
-	- 컴퓨터 기종에 관계없이 정보 교환이 가
+	- 미 국퓨터 기종에 관계없이 정보 교환이 가능하도록 해준다.
 
 ---
 
@@ -189,6 +189,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NzQ0NjU0NSwxNTU0NDg2MjUsNzQ2MD
+eyJoaXN0b3J5IjpbMTk1MTM4MTcwNCwxNTU0NDg2MjUsNzQ2MD
 cyOTM1LC0xNTc0MDcyOTYxXX0=
 -->
