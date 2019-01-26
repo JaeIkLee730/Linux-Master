@@ -91,10 +91,13 @@
 			- Mesh형: Star + Ring 형태. 라우터 이용하여 LAN들을 연결하거나 백본망 구성시 사용
 		- 전송방식
 			- Ethernet, CSMA/CD
-			- 
+				- CSMA: 회선을 체크하여 사용중이지 않으면 data 전송
+				- CD: Collision Detection
 				- MAC 주소를 기반으로 상호간 data 교환
-				- 전송 매체: BNC, UTP, STP
+				- 전송 매체:BNC, UTP, STP
 				- 기기 간의 상호 연결: Hub, Switch, Repeater
+			- Token Ring
+				- 
 	- MAN (Metropolitan Area Network): 도시 하나 정도
 	- WAN (Wide Area Network): 원거리
 
@@ -117,6 +120,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNzQ2NjM4OCw3NDYwNzI5MzUsLTE1Nz
+eyJoaXN0b3J5IjpbMjAyNzE5NTk0OSw3NDYwNzI5MzUsLTE1Nz
 QwNzI5NjFdfQ==
 -->
