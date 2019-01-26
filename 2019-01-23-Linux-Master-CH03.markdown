@@ -214,8 +214,7 @@
 	- Loopback: 자기 자신을 가리킨다.
 		- 127.0.0.0~127.255.255.255 사용
 - **Domain Name**
-	- 
-
+	- 숫자 IP -> 계층으로 구분된 
 ---
 
 
@@ -233,6 +232,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1ODg0NjIxNSwxNTU0NDg2MjUsNzQ2MD
-cyOTM1LC0xNTc0MDcyOTYxXX0=
+eyJoaXN0b3J5IjpbMTcxODU4MTQzOSwxNzU4ODQ2MjE1LDE1NT
+Q0ODYyNSw3NDYwNzI5MzUsLTE1NzQwNzI5NjFdfQ==
 -->
