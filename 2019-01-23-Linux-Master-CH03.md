@@ -186,6 +186,9 @@
 		- 빠르지만 안정성은 떨어짐
 - **Protocol number**
 	- 서로 다른 프로토콜의 system에서 전송되는 데이터를 처리하기 위해 datagram header에 첨부
+	- 리눅스 시스템에서의 protocol#들은 ``/etc/protocols``에서 확인 가능
+- **Port number**
+	-  
 	- 
 	- 
 
@@ -206,5 +209,5 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTU0NDczNDAsMTU1NDQ4NjI1XX0=
+eyJoaXN0b3J5IjpbLTY5NDA5Nzg2MiwxNTU0NDg2MjVdfQ==
 -->
