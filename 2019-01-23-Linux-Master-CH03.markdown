@@ -3,7 +3,7 @@
 
 ## 1. 네트워크의 기초
 
-#### **1.1. OSI 7계층**
+### **1.1. OSI 7계층**
 - 컴퓨터 네트워크 프로토콜 디자인과 통신을 7계층으로 나누어 정의한 것으로 ISO에서 개발
 - 각 계층은 독립적이며 하위계층의 기능을 이용하고 상위계층에게 기능을 제공한다.
 - 계층별 특징
@@ -36,7 +36,7 @@
         - 인터넷상 전송단위: bit(signal)
         - 허브, 리피터 / RS-232,10BASE-T, ...
 
-#### **1.2. 네트워크 장비**
+### **1.2. 네트워크 장비**
 - LAN 구성 장비
     - **Network Card** 
         - = Network Interface Card = Ethernet Card = LAN Card = Network Adaptor
@@ -77,10 +77,12 @@
         - L2에서 리피터나 허브와 같은 기능을 하며 특정 네트워크로부터의 통신량 조절
     - **Router**
         - L1-L3의 기능을 지원. 브리지의 기능에 추가하여 L3에 대한 경로 선택 기능 제공
-        - 
 
-#### **1.3. Ethernet/LAN의 기본 이해**
-#### **1.4. TCP/IP 및 네트워크 프로토콜의 이해**
+
+### **1.3. Ethernet/LAN의 기본 이해**
+- 통신
+
+### **1.4. TCP/IP 및 네트워크 프로토콜의 이해**
 
 ---
 
@@ -99,5 +101,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ2MDcyOTM1LC0xNTc0MDcyOTYxXX0=
+eyJoaXN0b3J5IjpbLTE4OTc5MjIzMiw3NDYwNzI5MzUsLTE1Nz
+QwNzI5NjFdfQ==
 -->
