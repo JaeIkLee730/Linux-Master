@@ -148,8 +148,11 @@
 - Protocol의 개요
 	- 컴퓨터들이 서로 통신을 하기 위해 미리 정해놓은 통신 규칙.
 	- 기본 구성 요소
-		- Syntax: 전송할 data의 구조, 형태에 대한 내요 
-		- 
+		- Syntax: 전송할 data의 구조, 형태에 대한 내용
+		- Semantic: 오류제어 및 data를 형태에 따라 어덯게 해석할지에 대한 내용
+		- Timing: data를 언제 어떤 속도로 보낼 것인지에 대한 내용
+	- 기능
+		- Addressing
 
 
 ---
@@ -169,5 +172,5 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2OTE1NDA3NywxNTU0NDg2MjVdfQ==
+eyJoaXN0b3J5IjpbMTYzMDQ0NDQxMiwxNTU0NDg2MjVdfQ==
 -->
