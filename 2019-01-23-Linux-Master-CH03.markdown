@@ -154,7 +154,8 @@
 	- 기능
 		- Addressing: 주소지정 방식
 		- Sequencing: data 전송순서 명시. flow control, error control에 사용
-		- Fragmentation & Reassembly
+		- Fragmentation&Reassembly: 블록을 분할 전송 -> 재조합하여 수신
+		- Flow 
 
 
 ---
@@ -174,6 +175,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODY2OTg1OTQsMTU1NDQ4NjI1LDc0Nj
-A3MjkzNSwtMTU3NDA3Mjk2MV19
+eyJoaXN0b3J5IjpbLTg1NjE0NDk1MSwxNTU0NDg2MjUsNzQ2MD
+cyOTM1LC0xNTc0MDcyOTYxXX0=
 -->
