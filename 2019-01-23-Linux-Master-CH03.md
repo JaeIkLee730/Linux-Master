@@ -196,7 +196,13 @@
 	- protocol, src IP, src Port, dst IP, dst Port 정보를 담는다.
 - **IP주소**
 	- 인터넷에서 다른 컴퓨터와 서로 인식하고 통신하기 위해 컴퓨터마다 고유하게 제공되는 숫자
-	- 4부분의 8bit로 이뤄져 있다 
+	- IPv4는 4부분의 8bit로 이뤄져 있다
+	- 첫번째 8bit영역의 처음 4비트에 따라 class가 결정된다.
+	- A: 0xxxxxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx
+	- B: xxxxxxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx.
+	- C: xxxxxxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx.
+	- D: xxxxxxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx.
+	- E 
 	- 
 
 ---
@@ -216,5 +222,5 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5ODEwNjU0MiwxNTU0NDg2MjVdfQ==
+eyJoaXN0b3J5IjpbMTQ5NTgyNzU3MSwxNTU0NDg2MjVdfQ==
 -->
