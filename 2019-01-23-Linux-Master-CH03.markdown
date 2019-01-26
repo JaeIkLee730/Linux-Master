@@ -97,7 +97,10 @@
 				- 전송 매체:BNC, UTP, STP
 				- 기기 간의 상호 연결: Hub, Switch, Repeater
 			- Token Ring
-				- 
+				- Ring형 구성방식. 
+				- Token이라는 일종의 사용권을 획득해야 data를 전송가능
+			- FDDI
+				- 광섬유 케이블을 사용하여 설계된 Ring 구조의 통신망
 	- MAN (Metropolitan Area Network): 도시 하나 정도
 	- WAN (Wide Area Network): 원거리
 
@@ -120,6 +123,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNzE5NTk0OSw3NDYwNzI5MzUsLTE1Nz
+eyJoaXN0b3J5IjpbLTg5MjE4NTE1MCw3NDYwNzI5MzUsLTE1Nz
 QwNzI5NjFdfQ==
 -->
