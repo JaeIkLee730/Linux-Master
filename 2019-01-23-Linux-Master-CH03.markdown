@@ -199,11 +199,12 @@
 	- IPv4는 4부분의 8bit로 이뤄져 있다
 	- [네트워크 ID 부분][host ID 부분] 으로 구성
 	- 첫번째 8bit영역의 처음 4비트에 따라 class가 결정된다.
-	- A: 0XXXXXXX.xxxxxxxx.xxxxxxxx.xxxxxxxx
-	- B: 10XXXXXX.XXXXXXXX.xxxxxxxx.xxxxxxxx.
-	- C: 110XXXXX.XXXXXXXX.XXXXXXXX.xxxxxxxx.
-	- D: 1110XXXX.XXXXXXXX.XXXXXXXX.XXXXXXXX.
-	- E: 1111XXXX.XXXXXXXX.XXXXXXXX.XXXXXXXX. 
+- **IP의 클래스**
+	- A: 0XXXXXXX.xxxxxxxx.xxxxxxxx.xxxxxxxx  		Net ID: 0~127
+	- B: 10XXXXXX.XXXXXXXX.xxxxxxxx.xxxxxxxx 		Net ID: 
+	- C: 110XXXXX.XXXXXXXX.XXXXXXXX.xxxxxxxx	Net ID: 
+	- D: 1110XXXX.XXXXXXXX.XXXXXXXX.XXXXXXXX
+	- E: 1111XXXX.XXXXXXXX.XXXXXXXX.XXXXXXXX 
 	- 
 
 ---
@@ -223,6 +224,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTgzNjUyMDUsMTU1NDQ4NjI1LDc0Nj
+eyJoaXN0b3J5IjpbLTE2OTU1ODk2MTcsMTU1NDQ4NjI1LDc0Nj
 A3MjkzNSwtMTU3NDA3Mjk2MV19
 -->
