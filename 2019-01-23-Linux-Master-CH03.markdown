@@ -210,7 +210,11 @@
 	- Private IP: 내부 네트워크를 구축할 때 사용
 		- A: 10.0.0.0~10.255.255.255 		(1개의 네트워크)
 		- B: 172.16.0.0~172.31.255.255	(16개의 네트워크)
-		- C: 192.168.0.0~192.168.255.255 ()
+		- C: 192.168.0.0~192.168.255.255 	(256개의 네트워크)
+	- Loopback: 자기 자신을 가리킨다.
+		- 127.0.0.0~127.255.255.255 사용
+- **Domain Name**
+	- 
 
 ---
 
@@ -229,6 +233,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc0MDM0ODA3LDE1NTQ0ODYyNSw3NDYwNz
-I5MzUsLTE1NzQwNzI5NjFdfQ==
+eyJoaXN0b3J5IjpbMTc1ODg0NjIxNSwxNTU0NDg2MjUsNzQ2MD
+cyOTM1LC0xNTc0MDcyOTYxXX0=
 -->
