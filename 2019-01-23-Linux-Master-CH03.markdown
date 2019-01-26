@@ -82,9 +82,9 @@
 ### **1.3. Ethernet/LAN의 기본 이해**
 - **통신망의 종류**
 	- 규모에 따라 나뉜다
-	- LAN: Local Area Network
-	- MAN: Metropolitan Area Network
-	- WAN: Wide Area Network
+	- LAN (Local Area Network): 근거리. 집, 사무실, PC방 정도
+	- MAN (Metropolitan Area Network): 도시 하나 정도
+	- WAN (Wide Area Network): 원거리
 
 ### **1.4. TCP/IP 및 네트워크 프로토콜의 이해**
 
@@ -105,6 +105,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMDMyODM0MCw3NDYwNzI5MzUsLTE1Nz
+eyJoaXN0b3J5IjpbMjA3MzczNTU0OCw3NDYwNzI5MzUsLTE1Nz
 QwNzI5NjFdfQ==
 -->
