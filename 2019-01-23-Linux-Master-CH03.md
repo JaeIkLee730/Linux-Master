@@ -192,7 +192,7 @@
 	- 리눅스 시스템에서는 ``/etc/services``파일에서 주요 포트 번호를 확인 가능 
 - **Scoket**
 	- 네트워크상의 컴퓨터에서 통신을 위한 접점
-	- 네트워크 관련 프로그램들은 데이터 통신을 위해 socket을 생성하고 socketsssd
+	- 네트워크 관련 프로그램들은 상호간 데이터 교환을 위해 socket을 생성하고 socket으로 통신
 	- 
 	- 
 
@@ -213,5 +213,5 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzM1NTQ5ODksMTU1NDQ4NjI1XX0=
+eyJoaXN0b3J5IjpbLTExNzYzMDQwNjcsMTU1NDQ4NjI1XX0=
 -->
