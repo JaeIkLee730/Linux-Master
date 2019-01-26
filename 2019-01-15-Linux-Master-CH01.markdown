@@ -18,7 +18,7 @@
         * 안드로이드
         * 태블릿 등... : (((Moblin + Maemo) -> MeeGo) + LiMo -> Tizen) + Bada
 * Embedded
-    * 스마트 TV용 OS: 리눅스 기반
+    * 스마트 TV용 OS: ```리눅스 기반``
     * IVI
         * Windows Embedded Automotive, QNX, GENIVI, 안드로이드
         * MeeGo, Tizen
