@@ -205,7 +205,9 @@
 	- C: 110XXXXX.XXXXXXXX.XXXXXXXX.xxxxxxxx	Net ID: 192.0.0~223.255.255
 	- D: 1110XXXX.XXXXXXXX.XXXXXXXX.XXXXXXXX	Net ID: 224.0.0.0~239.255.255.255
 	- E: 1111XXXX.XXXXXXXX.XXXXXXXX.XXXXXXXX 	Net ID: 240.0.0.0~255.255.255.255
-- **XMR
+- **특수 목적 IP**
+	- A~C 클래스의 IP들 중에는 특수 목적으로 사용되는 주소가 있다.
+	- P IP
 
 ---
 
@@ -224,6 +226,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTUwMTcxOTksMTU1NDQ4NjI1LDc0Nj
+eyJoaXN0b3J5IjpbLTE0OTEzMTkwMzMsMTU1NDQ4NjI1LDc0Nj
 A3MjkzNSwtMTU3NDA3Mjk2MV19
 -->
