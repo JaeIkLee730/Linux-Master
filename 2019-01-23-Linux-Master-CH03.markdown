@@ -118,8 +118,8 @@
 	- Packet Switching
 		- 전송 단위가 packet임
 		- 전송 대역폭을 동적인 방식으로 공유
-		- datagram방식
-			- 비연결형서비스를 이용해 패킷들이 독립적으로 전송 
+		- Datagram 방식: 연결 설정 과정이 없기 때문에 패킷들이 각기 다른 경로로 독립적으로 전송
+		- Virtual Circuit 방식: 
 	- 
 
 ### **1.4. TCP/IP 및 네트워크 프로토콜의 이해**
@@ -141,6 +141,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTgwNDU5NTQsNzQ2MDcyOTM1LC0xNT
-c0MDcyOTYxXX0=
+eyJoaXN0b3J5IjpbLTY5OTU1MTIyLDc0NjA3MjkzNSwtMTU3ND
+A3Mjk2MV19
 -->
