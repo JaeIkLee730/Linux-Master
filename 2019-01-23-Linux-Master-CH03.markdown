@@ -184,7 +184,8 @@
 	- UDP
 		- 연결 과정, 전송 성공 여부 체크, 오류 수정 없음
 		- 빠르지만 안정성은 떨어짐
-- Protocol number
+- **Protocol number**
+	- 서로 다른 프로토콜의 system에서 전송되는 데이터를 처리하기 위해 datagram header에 첨부
 	- 
 	- 
 
@@ -205,6 +206,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODcwMTk5OTcsMTU1NDQ4NjI1LDc0Nj
+eyJoaXN0b3J5IjpbLTEwNTU0NDczNDAsMTU1NDQ4NjI1LDc0Nj
 A3MjkzNSwtMTU3NDA3Mjk2MV19
 -->
