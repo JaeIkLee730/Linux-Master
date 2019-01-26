@@ -103,9 +103,11 @@
 			- 광섬유 케이블을 사용하여 설계된 Ring 구조의 통신망
 			- 이중 링 구조를 사용하여 한꺼번에 단절되는 경우 방지
 - **MAN (Metropolitan Area Network)**
-	- 도시 하나 정도의 
+	- 도시 하나 정도의 규모로 도시 내의 여러 LAN을 묶어 놓은 형태
+	- LAN보다 장거리이며 고속이고 음성과 데이터 모두 전송이 가능하다 
+- **WAN (Wide Area Network)**
+	- 굮
 	- 
-- WAN (Wide Area Network): 원거리
 
 ### **1.4. TCP/IP 및 네트워크 프로토콜의 이해**
 
@@ -126,6 +128,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcwNDI0MjM4LDc0NjA3MjkzNSwtMTU3ND
-A3Mjk2MV19
+eyJoaXN0b3J5IjpbMTYxMTMzNjAzNyw3NDYwNzI5MzUsLTE1Nz
+QwNzI5NjFdfQ==
 -->
