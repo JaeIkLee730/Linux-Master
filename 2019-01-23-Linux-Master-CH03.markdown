@@ -81,8 +81,9 @@
 
 ### **1.3. Ethernet/LAN의 기본 이해**
 - 통신망의 종류
-	- 규모에 따라 나뉜다
-	- LAN (Local Area Network): 근거리. 집, 사무실, PC방 정도
+규모에 따라 나뉜다
+	- **LAN (Local Area Network)**
+		- 근거리. 집, 사무실, PC방 정도
 		- 주로 Ethernet, WLAN 방식 사용.
 		- 구성방식(topology)
 			- Star형: 중앙 컴퓨터가 각 컴퓨터와 연결되어 통신한다. 중앙 컴퓨터 고장시 전체 중단
@@ -101,6 +102,7 @@
 				- Token이라는 일종의 사용권을 획득해야 data를 전송가능
 			- FDDI
 				- 광섬유 케이블을 사용하여 설계된 Ring 구조의 통신망
+				- 이중 링 구조를 사용하여 한꺼번에 단절되는 경우 방지
 	- MAN (Metropolitan Area Network): 도시 하나 정도
 	- WAN (Wide Area Network): 원거리
 
@@ -123,6 +125,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MjE4NTE1MCw3NDYwNzI5MzUsLTE1Nz
+eyJoaXN0b3J5IjpbLTk0MjY3NTEzNiw3NDYwNzI5MzUsLTE1Nz
 QwNzI5NjFdfQ==
 -->
