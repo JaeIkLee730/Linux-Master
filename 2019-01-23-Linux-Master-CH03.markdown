@@ -147,7 +147,8 @@
 ### **1.4. TCP/IP 및 네트워크 프로토콜의 이해**
 - Protocol의 개요
 	- 컴퓨터들이 서로 통신을 하기 위해 미리 정해놓은 통신 규칙.
-	- 서로 접속, 전달, 통신 하는 방식과 주고받는 
+	- 기본 구성 요소
+		- Syntax: 전송할 data의 구조, 혀
 
 
 ---
@@ -167,6 +168,6 @@ eyJoaXN0b3J5IjpbLTgyMDQwMTQwMl19
 
 [Ref]: 정성재, 배유미. 리눅스 마스터 1급 정복하기 (1차,2차 시험대비). n.p.: 북스홀릭퍼블리싱, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMzk4ODkzMywxNTU0NDg2MjUsNzQ2MD
-cyOTM1LC0xNTc0MDcyOTYxXX0=
+eyJoaXN0b3J5IjpbLTIxMDYyOTM5ODMsMTU1NDQ4NjI1LDc0Nj
+A3MjkzNSwtMTU3NDA3Mjk2MV19
 -->
