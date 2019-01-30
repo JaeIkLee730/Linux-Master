@@ -244,10 +244,69 @@
 
 ## 2. 네트워크 설정
 
-#### **2.1. 환경 설정**
-- **리눅스 네트워크**
-- **이더넷 카드 설치하기**
-#### **2.2. 관련 명령어**
+### **2.1. 환경 설정**
+- 리눅스 네트워크
+  - **설치 순서**
+    - Network HW --> Network Protocol --> Network Service Program
+  - 하드웨어 설치
+    - Ehternet Card, Modem, Serial/Parallel Cable, 등등...
+    - lo: local loopback을 나타냄. 가상으로 만들어진 NIC
+    - eth_: CentOS6.x 이전까지 Ehternet Card
+    - enp_: CentOS7.x 부터 사용된 Ehternet Card
+    - dl_, sl_, ppp_, plip_, tr_, fddi_, virbr_, xenbr_, docker_, .....
+  - Protocol 설치
+    - SLIP, PPP, TCP/IP 등을 설치해야 하지만 리눅스는 대부분의 프로토콜을 기본적으로 지원함
+  - 서비스 프로그램 설치
+    - 웹 서버, 메일 서버, FTP 서버 등.....
+- 이더넷 카드 설치하기
+  - 대부분 자동으로 인식하여 설치
+  - 새로 출시된 카드라 인식을 못하는 경우
+  1. Ehternet Card 제조사 홈페이지에서 module file 설치
+  2. modprobe 명령으로 kernel에 로드 --> lsmod 명령으로 kernel에 로드된 것 확인
+  3. 영구적으로 변경하려면: /etc/modprobe.conf 또는 /etc/modprobe.d 디렉토리 내의 파일들 설정
+- 인터넷 접속을 위한 설정
+  - 과거: 모뎀(HW) + PPP,SLIP(Protocol) + pppd(데몬 서비스) --> 현재: Ehternet Card
+  - 네트워크 설정을 위해: IP addr, Netmask addr, Gateway addr 설정 필요 
+  - Netmask
+    - 네트워크를 분할하여 새로운 하위의 네트워크를 구성
+    - 이진 표현법을 기준으로 1로 표시된 부분까지가 Network ID 파트(네트워크 파트)가 된다.
+    - 네트워크 부분이라는 것은 데이터를 전송할 떄 라우터를 거치지 않고 전송이 가능하다는 의미
+    - A, B, C 클래스에 따라 차이가 있다.
+    - subnet의 갯수
+      - = network내의 network addr갯수 
+      - = network내의 broadcast addr 갯수
+      - = network내의 gateway addr 갯수 (인터넷에 연결될 경우)
+      - netmask=255.255.255.0 인 경우: 1개
+      - netmask=255.255.255.128 인 경우: 2개
+      - netmask=255.255.255.192 인 경우: 4개 
+  - Gateway
+    - 서로 다른 통신망이나 프로토콜을 사용하는 네트워크간의 통로 역할
+    - 인터넷에 연결하려면 Gateway 주소가 필요하다
+  - Network addr
+    - 네트워크를 대표하는 주소
+  - 주소들(C class 기준)
+    - Netmask addr: A=255.0.0.0 / B=255.255.0.0 / C=255.255.255.0
+    - Gateway addr: [ Network_ID ].1 또는 [ Network_ID ].254
+    - Network addr: [ Network_ID ].0
+    - Broadcast addr: [ Network_ID ].255
+- 네트워크 인터페이스 설정 방법
+  - GUI 기반
+    - [ 시스템 ] - [ 기본 설정 ] - [ 네트워크 연결 ]
+    - 또는 `$ nm-connection-editor`
+    - IP 자동 할당 방식 -> "DHCP" 선택
+	- static IP 할당시 -> "수동" 선택후 IP 주소 입력
+- TUI 기반
+  - `$ setup` 또는 `$ system-config-network`
+- 명령어 이용
+  - ifconfig, route 명령어 이용
+  - 재부팅하면 초기화된다.
+- 네트워크 관련파일 이용
+  - 이 방법이 재부팅뒤에도 지속적으로 변경되도록하는 방법임
+  - `/et`
+
+
+
+### **2.2. 관련 명령어**
 
 
 <!--stackedit_data:
