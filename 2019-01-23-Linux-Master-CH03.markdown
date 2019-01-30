@@ -239,8 +239,8 @@
 		- flow label을 도입하여 흐름제어 기능을 지원
 		- IPv6 확장 헤더를 통해 패킷 출처 인증, 데이터 무결성 및 비밀 보장 기능 적용 가능
 		- IPv6 호스트는 네트워크의 물리적 위치 제한없이 같은 주소를 유지하면서 이동 가능
+  
 ---
-
 
 ## 2. 네트워크 설정
 
@@ -302,11 +302,72 @@
   - 재부팅하면 초기화된다.
 - 네트워크 관련파일 이용
   - 이 방법이 재부팅뒤에도 지속적으로 변경되도록하는 방법임
-  - `/et`
-
-
+  - 설정 파일
+    - `/etc/sysconfig/network`
+    - `/etc/sysconfig/network-scripts/ifcfg-eth0`
+    - `etc/resolv/.conf`
+  - 데몬 재시작
+    - /etc/rc.d/init.d/network restart
+    - /etc/init.d/network restart
+    - service network restart
 
 ### **2.2. 관련 명령어**
+- **ifconfig [ interface ] [ address ] [ option ]**
+  - IP, netmask, MAC 등을 설정, 확인
+  - interface: eth0, lo, wlan, .....
+  - address: netmask [ address ] broadcast [ address ] ....
+  - option: up, down, ....
+  - 출력 항목들
+    - Link encap: NI의 형식
+    - HWaddr: MAC
+    - inet addr: IPv4
+    - Bcast: broadcast
+    - Mask: netmask
+    - UP / BROADCAST / RUNNING / MULTICAST
+    - MTU: 한번에 전송할 수 있는 패킷의 최대 크기
+    - Metric, RX/TX
+    - collisions: 충돌이 발생한 패킷 수
+- **route [ add|del ] [ dst ] netmask [ netmask 값 ] gw [ gw 값 ] dev [ 인터페이스 ]**
+  - routing table 정보
+  - Netwok addr, Gateway addr
+  - `$ netstat -r` 과 유사
+  - 항목 설명
+    - Destination: 목적지 Network addr
+    - Gateway: 목적지 주소로 보내기 위한 Gateway addr
+    - Genmask: 목적지의 network addr을 알아내기 위한 netmask
+    - Flags: 목적지 네트워크와의 연결 상태 (Use, Gateway, Host, D, Modify)
+    - Metric: 목적지 네트워크와의 거리 (hop count)
+    - Ref, Use, lface
+- **netstat [ option ] [ address_family_option ]**
+  - 네트워크의 연결 상태
+  - options: 실제 사용시에는 맨 앞글자만
+    - [ -all ], [ -numeric ], [ -pid ], [ -routing ], [ -listening port ]
+    - [ -interface info ], [ -statistical info ], [ -continuous display ]
+    - [ -tcp ], [ -udp ], [ -group member info ]
+  - address family options
+    - [ --protocol=value ], [ --inet, --ip ], [ --unix ]
+  - 출력내용 중 state 부분
+    - LISTEN: socket을 열고 waiting
+    - SYS-SENT: 원격 호스트에 연결을 요청한 상태
+    - SYN_RECEIVED: client에게 접속 허락했지만 client한테 답장은 아직
+    - ESTABLISHED: 3way-handshaking 완료
+    - FIN-WAIT1: host의 socket closed, 연결 종료 요청
+    - FIN-WAIT2: 상대로부터 연결종료 accepted. 상대로부터 closed 메세지 기다리는중
+    - CLOSE_WAIT: 원격 host는 종료되고 나는 socket 종료하려는 중
+    - LAST_ACK: 나도 socket 닫고 원격 host로부터 마지막 ACK 기다리는중
+    - TIME_WAIT: 패킷 처리는 끝났지만 분실되었을지도 모르는 segment 기다리는 상태
+    - CLOSING: ACK이 분실된 상태
+    - CLOSED: 소켓 연결 종료
+    - UNKNOWN: 소켓 상태를 확인할 수 없는 상태
+- **arp [ option ]**
+  - ARP(Address Resolution Protocol) Cache를 관리하는 명령
+  - ARP Cache: 현재 접속되어 잇는 IPv4를 MAC으로 바꿔서 기억하는 곳
+  - options: 실제 사용시에는 맨 앞글자만
+    - [ -a: 특정 host ], [ -delete ], [ -numeric ], [ -v: 자세히 ]
+- **ping [ option ] [ hostname | IP_addr ]**
+  - options: 실제 사용시에는 맨 앞글자만
+    - [ -count ], [ -interval ], [ -size ], [ -w: w초 후 중지 ]
+
 
 
 <!--stackedit_data:
