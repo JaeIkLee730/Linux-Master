@@ -295,21 +295,21 @@
     - 또는 `$ nm-connection-editor`
     - IP 자동 할당 방식 -> "DHCP" 선택
 	- static IP 할당시 -> "수동" 선택후 IP 주소 입력
-- TUI 기반
-  - `$ setup` 또는 `$ system-config-network`
-- 명령어 이용
-  - ifconfig, route 명령어 이용
-  - 재부팅하면 초기화된다.
-- 네트워크 관련파일 이용
-  - 이 방법이 재부팅뒤에도 지속적으로 변경되도록하는 방법임
-  - 설정 파일
-    - `/etc/sysconfig/network`
-    - `/etc/sysconfig/network-scripts/ifcfg-eth0`
-    - `etc/resolv/.conf`
-  - 데몬 재시작
-    - /etc/rc.d/init.d/network restart
-    - /etc/init.d/network restart
-    - service network restart
+  - TUI 기반
+    - `$ setup` 또는 `$ system-config-network`
+  - 명령어 이용
+    - ifconfig, route 명령어 이용
+    - 재부팅하면 초기화된다.
+  - 네트워크 관련파일 이용
+    - 이 방법이 재부팅뒤에도 지속적으로 변경되도록하는 방법임
+    - 설정 파일
+      - `/etc/sysconfig/network`
+      - `/etc/sysconfig/network-scripts/ifcfg-eth0`
+      - `etc/resolv/.conf`
+    - 데몬 재시작
+      - /etc/rc.d/init.d/network restart
+      - /etc/init.d/network restart
+      - service network restart
 
 ### **2.2. 관련 명령어**
 - options: 실제 사용시에는 맨 앞글자만
