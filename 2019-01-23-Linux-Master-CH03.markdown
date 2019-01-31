@@ -307,13 +307,13 @@
       - `/etc/sysconfig/network-scripts/ifcfg-eth0`
       - `etc/resolv/.conf`
     - 데몬 재시작
-      - /etc/rc.d/init.d/network restart
-      - /etc/init.d/network restart
-      - service network restart
+      - `$ /etc/rc.d/init.d/network restart`
+      - `$ /etc/init.d/network restart`
+      - `$ service network restart`
 
 ### **2.2. 관련 명령어**
 - options: 실제 사용시에는 맨 앞글자만
-- **ifconfig [ interface ] [ address ] [ option ]**
+- **`$ ifconfig [ interface ] [ address ] [ option ]`**
   - IP, netmask, MAC 등을 설정, 확인
   - interface: eth0, lo, wlan, .....
   - address: netmask [ address ] broadcast [ address ] ....
@@ -328,7 +328,7 @@
     - MTU: 한번에 전송할 수 있는 패킷의 최대 크기
     - Metric, RX/TX
     - collisions: 충돌이 발생한 패킷 수
-- **route [ add|del ] [ dst ] netmask [ netmask 값 ] gw [ gw 값 ] dev [ 인터페이스 ]**
+- **`$route [ add|del ] [ dst ] netmask [ netmask 값 ] gw [ gw 값 ] dev [ 인터페이스 ]`**
   - routing table 정보
   - Netwok addr, Gateway addr
   - `$ netstat -r` 과 유사
@@ -339,7 +339,7 @@
     - Flags: 목적지 네트워크와의 연결 상태 (Use, Gateway, Host, D, Modify)
     - Metric: 목적지 네트워크와의 거리 (hop count)
     - Ref, Use, lface
-- **netstat [ option ] [ address_family_option ]**
+- **`$netstat [ option ] [ address_family_option ]`**
   - 네트워크의 연결 상태
   - options
     - [ -all ], [ -numeric ], [ -pid ], [ -routing ], [ -listening port ]
@@ -360,51 +360,51 @@
     - CLOSING: ACK이 분실된 상태
     - CLOSED: 소켓 연결 종료
     - UNKNOWN: 소켓 상태를 확인할 수 없는 상태
-- **arp [ option ]**
+- **`$arp [ option ]`**
   - ARP(Address Resolution Protocol) Cache를 관리하는 명령
   - ARP Cache: 현재 접속되어 잇는 IPv4를 MAC으로 바꿔서 기억하는 곳
   - options
     - [ -a: 특정 host ], [ -delete ], [ -numeric ], [ -v: 자세히 ]
-- **ping [ option ] [ hostname | IP_addr ]**
+- **`$ping [ option ] [ hostname | IP_addr ]`**
   - options 
     - [ -count ], [ -interval ], [ -size ], [ -w: w초 후 중지 ]
     - TTL: data의 유효기간을 나타냄
-- **traceroute [ hostname | IP_addr ]**
+- **`$traceroute [ hostname | IP_addr ]`**
   - 패킷이 특정 라우터까지 라우팅되는 과정을 출력하는 명령
   - ***로 나오는 경우: 전달이 지연되고 있거나 firewall인 경우
-- **nslookup [ option ] [ hostname | IP_addr ]**
+- **`$nslookup [ option ] [ hostname | IP_addr ]`**
   - DNS를 이용하여 도메인이나 IP를 조회하는 명령
   - options
     - [ -type=value ]: 메일 서버는 mx, 네임서버는 ns, 등 ...
-- **dig [ option ] 도메인명 [ type ]**
+- **`$dig [ option ] 도메인명 [ type ]`**
   - 도메인명(FQDN)으로 정보를 조회하는 명령
   - ex) www가 hostname이고 naver.com이 도메인인 FQDN은 www.naver.com 임
   - option: [ -type ]
   - type: MX, NS, .... -t와 같은 효과
-- **host [ option ] 도메인명**
+- **`$host [ option ] 도메인명`**
   - 도메인명으로 정보를 조회하는 명령
   - options
     - [ -type ]: DNS쿼리 질의 형식을 지정. default=A 이고 MX, NS등이 들어갈 수 있다.
     - [ -v ]: 도메인에 대한 자세한 정보 출력
     - [ -any ]: 
     - [ -C ]: SOA record 조회
-- **hostname [ option ] [ hostname ]**
+- **`$hostname [ option ] [ hostname ]`**
   - 시스템에 설정된 호스트네임을 출력하거나 설정하는 명령
   - options
     - [ -v ]: 자세한 호스트명 정보
     - [ -domain ], [ -full ], [ - alias ], [ -ip ]
-- **mii-tool [ option ] 네트워크 장치명**
+- **`$mii-tool [ option ] 네트워크 장치명`**
   - Media Independent Interface Tool
   - 네트워크 인터페이스의 상태를 점검하고 설정
   - options:
     - [ -restart ]
     - [ -Force ]
     - [ -verbose ]
-- **ethtool [ option ] [ 이더넷 카드명 ] [ 변경 내용 ]**
+- **`$ethtool [ option ] [ 이더넷 카드명 ] [ 변경 내용 ]`**
   - 이더넷 카드의 설정 정보를 출력하거나 변경
   - options
     - [ -s ], [ --change ]: 이더넷 카드의 설정을 변경
-- **ip [ option ] object [ command ]**
+- **`$ip [ option ] object [ command ]`**
   - 이더넷 장치, ip, 라우팅 정보 등의 설정 정보 출력 또는 변경
   - OPTIONS := { -V[ersion] | -h[uman-readable] | -s[tatistics] | -d[etails] .....}
   - OBJECT :=
@@ -413,7 +413,7 @@
     - link: 네트워크 장치를 의미
   - COMMAND := { add | del | show | list}
   - ex) ip addr add 192.168.5.13/24 dev eth1 ip 주소 설정
-- **ss [ options ] [ filter ]**
+- **`$ss [ options ] [ filter ]`**
   - socket statistics
   - socket 상태를 출력. netstat과 유사.
   - 다른 도구에 비해 TCP및 상태 정보에 더 많은 정보를 제공
@@ -426,12 +426,12 @@
     - [ -6 ]: IPv6 정보만
     - [ -0 ]: PACKET 소켓 정보를 출력
     - [ -x ]: unix 도메인 소켓 정보만
-- **telnet [ option ] [ hostname | IP_addr ] [ telnet_server_port ]**
+- **`$telnet [ option ] [ hostname | IP_addr ] [ telnet_server_port ]`**
   - 원격지 텔넷 서버에 접속할 때 사용
   - 서버의 포트 점검하는 용도로도 사용
   - option
     - [ -l user_name ]: 현재 로그인 계정이 아닌 다른 계정으로 접속
-- **ftp [ hostname | IP_addr ]**
+- **`$ftp [ hostname | IP_addr ]`**
   - ftp 서버에 접속할때 사용
   - ftp COMMAND := { help | ls | put | get | size | mkdir | rmdir | status | quit | mput | mget | cd | rename | chmod | delete | mdelete | close | open | lcd | hash | bi | passive}
 - **네트워크 관련 파일**
