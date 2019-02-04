@@ -289,18 +289,48 @@
     else
     fi
     
-    case 문자열 in 정규식1) 명령1 - 정규식2) - 명령2 - …… - *) default 명령 - esac
-        * select - 변수 - in 값1, 값2, …. - do - body - done      // 자동으로 메뉴를 생성해주고 입력도 받는다
+    case 문자열 in 
+      정규식1) 명령1
+      정규식2) 명령2
+      ……
+      *) default 명령
+    esac
+    
+    // select문: 자동으로 메뉴를 생성해주고 입력도 받는다
+    select 변수 in 값1, 값2, …
+      do
+         body
+      done      
+    ```
+    
     * 반복
-        * for - 변수 - in 값1, 값2,….. - do - body - done
-        * while - [ condition ] - do - body - done    // condition이 참인동안 수행
-        * until - [ condition ] - do - body - done     // condition이 거짓인동안 수행   
-    * 함수 
-        * def
-            * function_name( ) { body }
-            * function function_name { body }
-        * call
-            * function_name
+    ```bash
+    for 변수 in 값1, 값2,…
+      do
+         body
+      done
+    
+    while [ condition ]  // condition이 참인동안 수행
+      do
+         body
+      done    
+    
+    until [ condition ]  // condition이 거짓인동안 수행
+      do
+         body
+      done 
+    ```
+    
+    * 함수
+    ```bash
+    // definition
+    function_name( ) { body }
+    function function_name { body }
+    
+    // call
+    function_name
+    ```
+    
     * 패턴을
         * 처음부터(#, ##) / 끝부터(%, %%) 
         * 비교하여 match하는 부분 중 
