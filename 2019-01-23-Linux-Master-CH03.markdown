@@ -427,8 +427,8 @@
     - [ -0 ]: PACKET 소켓 정보를 출력
     - [ -x ]: unix 도메인 소켓 정보만
 - **`$ telnet [ option ] [ hostname | IP_addr ] [ telnet_server_port ]`**
-  - 원격지 텔넷 서버에 접속할 때 사용
-  - 서버의 포트 점검하는 용도로도 사용
+  - 원격지 텔넷 서버에 접속할 때 사용~~
+  - 서버의 포트 점검하는 용도로도 사용~~
   - option
     - [ -l user_name ]: 현재 로그인 계정이 아닌 다른 계정으로 접속
 - **`$ ftp [ hostname | IP_addr ]`**
